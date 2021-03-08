@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link
             rel="stylesheet"
-            href="https://bootswatch.com/4/slate/bootstrap.min.css"
+            href="https://bootswatch.com/4/minty/bootstrap.min.css"
         />
         <title>WeatherJS</title>
     </head>
@@ -16,13 +16,18 @@
                 <div
                     class="col-md-6 mx-auto text-center bg-primary mt-5 p-5 rounded"
                 >
-                    <h1 id="w-location"></h1>
+                    <h3 id="w-location"></h3>
+                    <br />
+                    <h3 id="w-string-currentDate"></h3>
                     <h3 id="w-desc" class="text-white"></h3>
-                    <h3 id="w-string"></h3>
+                    <br />
+                    <h3 id="w-string-temp"></h3>
+                    <br />
+                    <h4 id="w-string-day-night"></h4>
                     <ul id="w-details" class="list-group mt-3">
-                        <li class="list-group-item" id="w-humidity"></li>
+                        <li class="list-group-item" id="w-feels-like"></li>
                         <li class="list-group-item" id="w-pressure"></li>
-                        <li class="list-group-item" id="w-clouds"></li>
+                        <li class="list-group-item" id="w-humidity"></li>
                         <li class="list-group-item" id="w-wind"></li>
                     </ul>
                     <hr />
@@ -69,14 +74,6 @@
                                 <input
                                     type="text"
                                     id="city"
-                                    class="form-control"
-                                />
-                            </div>
-                            <div class="form-group">
-                                <label for="state">State</label>
-                                <input
-                                    type="text"
-                                    id="state"
                                     class="form-control"
                                 />
                             </div>
